@@ -6,4 +6,4 @@ cypress/downloads/
 cypress/results/
 cypress/reports/
 
-./node_modules/
+/node_modules/
