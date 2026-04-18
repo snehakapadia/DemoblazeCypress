@@ -24,12 +24,12 @@ npx cypress install
 
 ### Open Cypress Test Runner (UI mode)
 ```bash
-npx cypress open
+npm open
 ```
 
 ### Run tests in headless mode
 ```bash
-npx cypress run
+npm run
 ```
 
 ---
@@ -38,9 +38,9 @@ npx cypress run
 
 ```
 cypress/
- ├── e2e/
+ ├── tests/
  │    ├── login.cy.js
- │    ├── purchase.cy.js
+ │    ├── e2e.cy.js
  ├── fixtures/
  │    └── users.json
  │    └── products.json
@@ -75,9 +75,9 @@ cypress/
 
 The following core functionalities were prioritized:
 
-- I have added a full purchase flow from login to purchasing product. This flow is added as a basic flow as this is the important functionality for the application to go live.
+- I have added a full e2e purchase flow from login to purchasing product. This flow is added as a basic flow as this is the important functionality for the application to go live.
 - I have tried to cover some tests like Deletion of product, purchasing multiple products as I think these are essential flow for the application
-- For the login page I have tried to cover some negative tests. I have not written other negative tests because of the time constraint of the assignment.
+- For the login page I have tried to cover some negative tests. I have not written other negative tests because of the time constraint of the assignment. Similarly we can implement the tests for other pages.
 
 These were selected because they represent the **critical business flow of an e-commerce application**.
 

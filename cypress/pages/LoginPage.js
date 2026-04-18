@@ -15,10 +15,25 @@ class LoginPage {
   }
 
   enterUsername(username) {
+    //added retry mechanism as entering username is flacky sometimes
     cy.get(this.username)
       .should('be.visible')
+      .click()
       .clear()
-      .type(username, { delay: 100 } )
+      .type(username)
+
+    // verify and fix if needed
+    cy.get(this.username).invoke('val').then((val) => {
+
+        if (val !== username) {
+          cy.log('Retry typing username')
+
+          cy.get(this.username)
+            .clear()
+            .type(username)
+            .should('have.value', username)
+        }
+      })
   }
 
   enterPassword(password) {
