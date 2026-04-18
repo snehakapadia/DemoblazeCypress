@@ -92,10 +92,23 @@ These were selected because they represent the **critical business flow of an e-
 - Ensured each test is independent and repeatable so that if one of the tests fails due to being flaky then the next test wont be impacted.
 - Kept seperate environment file.
 - Created cypress.config.js file where default page timeout and other important test configurations are mentioned.
-- Created sample CI/CD file to run test in github actions.
+- Created CI/CD yml file to run test in github actions. This will execute all the tests in the suite after each merge.
 
 ## 🏗️ AI Usage
 
 - I have used Ai for basic project setup and structure as this is one time activity and can be easily done by ai. 
 - Took help to create basic structure of README file.
 - Created .yml file with the help of ai.
+
+## 🏗️ Future Enchancements
+
+- If I would have more time to implement then according to me we should try to add the below functionalities:
+    - Execute the tests in parallel 
+    - Display and downloadable report in github actions
+    - Reusable custom commands
+    - Reporting in slack
+    - Lint setup
+    - More tests addition like negative, boundary, etc tests
+    - Sanity tests executions
+    - API tests
+
