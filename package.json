@@ -1,0 +1,13 @@
+{
+  "name": "cypress-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "cypress run",
+    "open": "cypress open"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
