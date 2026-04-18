@@ -8,14 +8,24 @@ The tests cover the essential user flow of login, product selection, adding item
 
 ## 📌 Project Setup
 
+### Pre-requisites setup:
+
+#### Install Node:
+```bash
+brew install node
+```
+
+#### Download Visual Studio:
+1. Download: Go to the official VS Code website (https://code.visualstudio.com/download) and click the "Download for Mac" button (or "Mac Universal" for both Intel/Apple Silicon chips).
+2. Unzip: Locate the downloaded file (usually VSCode-darwin-universal.zip) in your Downloads folder and double-click it to extract the application.
+3. Install: Drag the Visual Studio Code.app file from the Downloads folder to your Applications folder.
+4. Open: Open your Applications folder and double-click Visual Studio Code to launch it.
+5. Security Prompt: If asked to confirm opening an app from the internet, click "Open". 
+
+
 ### 1. Install dependencies
 ```bash
 npm install
-```
-
-### 2. Install Cypress 
-```bash
-npx cypress install
 ```
 
 ---
@@ -31,6 +41,22 @@ npm open
 ```bash
 npm run
 ```
+
+---
+
+## ▶️ How to view Test Result
+
+### In the Visual Studio Terminal you can see the entire run result, below is an example:
+![Full Result](docs/images/fullResults.png)
+
+### Sample e2e Result
+![e2e Result](docs/images/e2eResult.png)
+
+### Sample login Result
+![e2e Result](docs/images/loginResult.png)
+
+### final Result
+![e2e Result](docs/images/finalResult.png)
 
 ---
 
@@ -111,4 +137,5 @@ These were selected because they represent the **critical business flow of an e-
     - More tests addition like negative, boundary, etc tests
     - Sanity tests executions
     - API tests
+    - Adding Reporter
 
