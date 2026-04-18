@@ -25,9 +25,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # 3. Install cypress
-      - name: Install cypress
-        run: npx cypress install
+      # 3. Verify cypress
+      - name: Verify Cypress
+        run: npx cypress verify
+
 
       # 4. Run Cypress tests
       - name: Run Cypress tests
