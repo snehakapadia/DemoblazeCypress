@@ -48,7 +48,7 @@ cypress/
  │    ├── CartPage.js
  │    └── HomnePage.js
  │    └── LoginPage.js
- │    └── ProductPage.js
+ │    └── E2e.js
 ```
 
 ---

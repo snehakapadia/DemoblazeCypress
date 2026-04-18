@@ -3,7 +3,7 @@ import ProductPage from '../pages/ProductPage'
 import CartPage from '../pages/CartPage'
 import HomePage from '../pages/HomePage'
 
-describe('Purchase Flow Tests',
+describe('E2E purchase Flow Tests',
   // This was just added an example, like we can retry the tests if they are flaky or application is not stable
   //I have commnented it as it is not needed for the current application and test setup
   // {
